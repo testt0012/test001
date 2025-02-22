@@ -14,47 +14,104 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
+    max-width: 90%; /* Allows it to shrink on smaller screens */
+    width: 400px; /* Default width for desktops */
 }
 
 .logo {
     display: block;
     margin: 0 auto 15px auto;
-    max-width: 300px;
+    max-width: 100%; /* Logo scales with container */
     height: auto;
 }
 
 label {
     display: block;
     margin-top: 10px;
+    font-size: 16px; /* Default font size for labels */
 }
 
 input, select {
     width: 200px;
-    padding: 5px;
+    padding: 8px; /* Slightly larger padding for better touch */
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    font-size: 16px; /* Larger text for inputs */
 }
 
 button {
     margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #af0707;
+    padding: 12px 24px; /* Larger button for touch */
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    display: block; /* Ensures button is centered */
+    display: block;
     margin-left: auto;
-    margin-right: auto; /* Centers the button */
+    margin-right: auto;
+    font-size: 16px; /* Larger text for button */
 }
 
 button:hover {
-    background-color: #af0707;
+    background-color: #45a049;
 }
 
 #result {
     margin-top: 15px;
     font-size: 18px;
     color: #333;
+}
+
+/* Media Query for Small Screens (Phones, ~max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%; /* Take up most of the screen width */
+        padding: 15px; /* Slightly more padding for touch */
+    }
+
+    .logo {
+        max-width: 200px; /* Smaller logo on phones to fit better */
+    }
+
+    label {
+        font-size: 18px; /* Larger labels for readability */
+    }
+
+    input, select {
+        width: 100%; /* Full width on phones */
+        padding: 12px; /* Even larger padding for touch */
+        font-size: 18px; /* Larger text in inputs */
+    }
+
+    button {
+        padding: 14px 28px; /* Larger button for easier tapping */
+        font-size: 18px; /* Larger button text */
+    }
+
+    #result {
+        font-size: 20px; /* Larger result text */
+    }
+}
+
+/* Media Query for Very Small Screens (e.g., tiny phones, ~max-width: 320px) */
+@media screen and (max-width: 320px) {
+    label {
+        font-size: 16px; /* Slightly smaller labels if very cramped */
+    }
+
+    input, select {
+        padding: 10px; /* Slightly smaller padding for very small screens */
+        font-size: 16px; /* Adjust text size */
+    }
+
+    button {
+        padding: 12px 24px; /* Adjust button size */
+        font-size: 16px; /* Adjust button text */
+    }
+
+    #result {
+        font-size: 18px; /* Adjust result text */
+    }
 }
