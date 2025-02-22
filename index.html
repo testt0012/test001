@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tile Clips Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Plastigia Injection Molding Specialists" class="logo">
+        <h1>Tile Clips Calculator</h1>
+
+        <label>Tile Width (mm):</label>
+        <select id="tileWidth" required>
+            <option value="">Select Width</option>
+            <option value="100">100</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+            <option value="250">250</option>
+            <option value="300">300</option>
+            <option value="350">350</option>
+            <option value="400">400</option>
+            <option value="450">450</option>
+            <option value="500">500</option>
+            <option value="550">550</option>
+            <option value="600">600</option>
+            <option value="650">650</option>
+            <option value="700">700</option>
+            <option value="800">800</option>
+            <option value="900">900</option>
+            <option value="1000">1000</option>
+            <option value="1100">1100</option>
+            <option value="1200">1200</option>
+        </select>
+
+        <label>Tile Length (mm):</label>
+        <select id="tileLength" required>
+            <option value="">Select Length</option>
+            <option value="100">100</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+            <option value="250">250</option>
+            <option value="300">300</option>
+            <option value="350">350</option>
+            <option value="400">400</option>
+            <option value="450">450</option>
+            <option value="500">500</option>
+            <option value="550">550</option>
+            <option value="600">600</option>
+            <option value="650">650</option>
+            <option value="700">700</option>
+            <option value="800">800</option>
+            <option value="900">900</option>
+            <option value="1000">1000</option>
+            <option value="1100">1100</option>
+            <option value="1200">1200</option>
+        </select>
+
+        <label>Area (m²):</label>
+        <input type="number" id="area" step="0.1" required>
+
+        <button onclick="calculateClips()">Calculate</button>
+
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

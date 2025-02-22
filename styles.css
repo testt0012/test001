@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 300px;
+    height: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 200px;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #af0707;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block; /* Ensures button is centered */
+    margin-left: auto;
+    margin-right: auto; /* Centers the button */
+}
+
+button:hover {
+    background-color: #af0707;
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+}
